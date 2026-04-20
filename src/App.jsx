@@ -30,11 +30,14 @@ function App() {
     return () => window.clearTimeout(timer);
   }, []);
 
-  if (loading || !minimumSplashReady) return <SplashScreen />;
+  if (loading || !minimumSplashReady) {
+    return <SplashScreen />;
+  }
 
   return (
-    <Router>
-      <Toaster position="top-right" />
+    <>
+      <Router>
+        <Toaster position="top-right" />
         <Routes>
           {/* Landing Page */}
           <Route path="/" element={<Landing />} />
@@ -78,6 +81,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
+    </>
   );
 }
 
