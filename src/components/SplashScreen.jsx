@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import fullLogo from '../full logo.jpeg';
+import navLogo from '../t.jpeg';
 
 const SplashScreen = () => {
   return (
@@ -16,8 +16,8 @@ const SplashScreen = () => {
         className="w-40 sm:w-48 md:w-56 mb-8"
       >
         <img
-          src={fullLogo}
-          alt="White Tooth Dental Clinic"
+          src={navLogo}
+          alt="WHITE TOOTH DENTAL CLINIC"
           className="w-full h-auto block rounded-full object-cover"
         />
       </motion.div>

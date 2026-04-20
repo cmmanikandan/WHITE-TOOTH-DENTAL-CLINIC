@@ -25,7 +25,7 @@ function App() {
   React.useEffect(() => {
     const timer = window.setTimeout(() => {
       setMinimumSplashReady(true);
-    }, 3500);
+    }, 2500);
 
     return () => window.clearTimeout(timer);
   }, []);
