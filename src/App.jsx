@@ -15,7 +15,6 @@ import AdminDashboard from './pages/admin/Dashboard';
 import StaffManagement from './pages/admin/StaffManagement';
 import PatientDashboard from './pages/patient/Dashboard';
 import PatientProfile from './pages/patient/Profile';
-import { useAuth } from './context/AuthContext';
 
 function App() {
 
