@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import fullLogo from '../full logo.jpeg';
 import { 
   ShieldCheck, 
   Clock,
@@ -41,7 +42,7 @@ const Landing = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-12 w-12 rounded-full" />
+            <img src={fullLogo} alt="White Tooth Dental Clinic" className="h-12 w-12 rounded-full object-cover" />
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-slate-600 font-bold text-sm">
@@ -282,7 +283,7 @@ const Landing = () => {
       <footer className="py-12 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center mb-6">
-            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-20 w-20 rounded-full" />
+            <img src={fullLogo} alt="White Tooth Dental Clinic" className="h-20 w-20 rounded-full object-cover" />
           </div>
           <p className="text-slate-400 text-sm font-medium">© 2024 White Tooth Dental Clinic. All rights reserved.</p>
         </div>

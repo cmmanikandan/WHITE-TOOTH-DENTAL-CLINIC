@@ -4,6 +4,7 @@ import BottomNav from '../components/BottomNav';
 import { useAuth } from '../context/AuthContext';
 import { LogOut } from 'lucide-react';
 import { auth } from '../firebase/config';
+import fullLogo from '../full logo.jpeg';
 
 const PatientLayout = () => {
   const { userData, loading, role } = useAuth();
@@ -11,7 +12,7 @@ const PatientLayout = () => {
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center bg-primary-50">
       <div className="animate-pulse w-32">
-        <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="w-full h-auto rounded-full" />
+        <img src={fullLogo} alt="White Tooth Dental Clinic" className="w-full h-auto rounded-full object-cover" />
       </div>
     </div>
   );
@@ -25,7 +26,7 @@ const PatientLayout = () => {
       <header className="bg-white border-b border-slate-100 px-6 py-4 sticky top-0 z-40">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full" />
+            <img src={fullLogo} alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full object-cover" />
           </div>
           <button 
             onClick={() => auth.signOut()}

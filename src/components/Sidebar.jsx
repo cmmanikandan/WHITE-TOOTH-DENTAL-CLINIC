@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import fullLogo from '../full logo.jpeg';
 import { 
   BarChart2, 
   Users, 
@@ -41,7 +42,7 @@ const Sidebar = () => {
     <div className="w-64 bg-white border-r border-slate-100 flex flex-col h-screen sticky top-0 hidden md:flex">
       <div className="p-6">
         <div className="flex items-center justify-center">
-          <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="w-20 h-20 rounded-full" />
+          <img src={fullLogo} alt="White Tooth Dental Clinic" className="w-20 h-20 rounded-full object-cover" />
         </div>
       </div>
       

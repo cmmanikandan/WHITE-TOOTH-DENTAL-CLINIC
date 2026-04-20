@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import fullLogo from '../full logo.jpeg';
 
 const SplashScreen = () => {
   return (
@@ -15,9 +16,9 @@ const SplashScreen = () => {
         className="w-40 sm:w-48 md:w-56 mb-8"
       >
         <img
-          src="/white-tooth-logo-main.svg"
+          src={fullLogo}
           alt="White Tooth Dental Clinic"
-          className="w-full h-auto block"
+          className="w-full h-auto block rounded-full object-cover"
         />
       </motion.div>
       

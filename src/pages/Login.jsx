@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import fullLogo from '../full logo.jpeg';
 import { 
   signInWithEmailAndPassword, 
   RecaptchaVerifier, 
@@ -117,7 +118,7 @@ const Login = () => {
         </Link>
 
         <div className="text-center mb-8">
-          <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="mx-auto w-24 h-24 rounded-full mb-3" />
+          <img src={fullLogo} alt="White Tooth Dental Clinic" className="mx-auto w-24 h-24 rounded-full object-cover mb-3" />
           <p className="text-slate-500 font-medium">Your Smile, Our System</p>
         </div>
 

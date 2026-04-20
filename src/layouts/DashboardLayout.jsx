@@ -3,6 +3,7 @@ import { Outlet, Navigate, useLocation } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import { useAuth } from '../context/AuthContext';
 import { Menu, Bell } from 'lucide-react';
+import fullLogo from '../full logo.jpeg';
 
 const DashboardLayout = ({ allowedRoles }) => {
   const { userData, loading, role } = useAuth();
@@ -19,7 +20,7 @@ const DashboardLayout = ({ allowedRoles }) => {
         {/* Mobile Header */}
         <header className="md:hidden flex items-center justify-between p-4 bg-white border-b border-slate-100 sticky top-0 z-40">
           <div className="flex items-center gap-2">
-            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full" />
+            <img src={fullLogo} alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full object-cover" />
           </div>
           <div className="flex items-center gap-4">
             <button className="text-slate-600 p-2 rounded-xl hover:bg-slate-50">
