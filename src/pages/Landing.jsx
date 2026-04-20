@@ -285,7 +285,7 @@ const Landing = () => {
       <footer className="py-12 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center mb-6">
-            <img src={fullLogo} alt="White Tooth Dental Clinic" className="h-20 w-20 rounded-full object-cover" />
+            <img src={navLogo} alt="WHITE TOOTH DENTAL CLINIC" className="h-20 w-20 rounded-full object-cover" />
           </div>
           <p className="text-slate-400 text-sm font-medium">© 2024 White Tooth Dental Clinic. All rights reserved.</p>
         </div>
