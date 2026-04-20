@@ -21,7 +21,7 @@ const DashboardLayout = ({ allowedRoles }) => {
         <header className="md:hidden flex items-center justify-between p-4 bg-white border-b border-slate-100 sticky top-0 z-40">
           <div className="flex items-center gap-2">
             <img src={navLogo} alt="WHITE TOOTH DENTAL CLINIC" className="h-10 w-10 rounded-full object-cover" />
-            <span className="text-slate-900 font-bold\">WHITE TOOTH</span>
+            <span className="text-slate-900 font-bold">WHITE TOOTH</span>
           </div>
           <div className="flex items-center gap-4">
             <button className="text-slate-600 p-2 rounded-xl hover:bg-slate-50">

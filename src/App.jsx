@@ -15,8 +15,33 @@ import AdminDashboard from './pages/admin/Dashboard';
 import StaffManagement from './pages/admin/StaffManagement';
 import PatientDashboard from './pages/patient/Dashboard';
 import PatientProfile from './pages/patient/Profile';
+import SplashScreen from './components/SplashScreen';
+import { useAuth } from './context/AuthContext';
 
 function App() {
+  const { loading } = useAuth();
+  const [splashDone, setSplashDone] = React.useState(false);
+  const [authTimeoutReached, setAuthTimeoutReached] = React.useState(false);
+
+  React.useEffect(() => {
+    const splashTimer = window.setTimeout(() => {
+      setSplashDone(true);
+    }, 2200);
+
+    const authTimer = window.setTimeout(() => {
+      setAuthTimeoutReached(true);
+    }, 5000);
+
+    return () => {
+      window.clearTimeout(splashTimer);
+      window.clearTimeout(authTimer);
+    };
+  }, []);
+
+  const shouldShowSplash = !splashDone || (loading && !authTimeoutReached);
+  if (shouldShowSplash) {
+    return <SplashScreen />;
+  }
 
   return (
     <>
@@ -61,7 +86,7 @@ function App() {
             <Route path="/patient/notifications" element={<div>Notifications</div>} />
           </Route>
 
-          {/* Redirects */}
+          {/* Unknown routes */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
