@@ -11,7 +11,7 @@ const PatientLayout = () => {
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center bg-primary-50">
       <div className="animate-pulse w-32">
-        <img src="/white-tooth-logo-icon.svg" alt="White Tooth Dental Clinic" className="w-full h-auto" />
+        <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="w-full h-auto rounded-full" />
       </div>
     </div>
   );
@@ -25,7 +25,7 @@ const PatientLayout = () => {
       <header className="bg-white border-b border-slate-100 px-6 py-4 sticky top-0 z-40">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/white-tooth-logo-horizontal.svg" alt="White Tooth Dental Clinic" className="h-10 w-auto max-w-[220px]" />
+            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full" />
           </div>
           <button 
             onClick={() => auth.signOut()}

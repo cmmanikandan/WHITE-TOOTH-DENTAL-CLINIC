@@ -40,8 +40,8 @@ const Sidebar = () => {
   return (
     <div className="w-64 bg-white border-r border-slate-100 flex flex-col h-screen sticky top-0 hidden md:flex">
       <div className="p-6">
-        <div className="flex items-center">
-          <img src="/white-tooth-logo-horizontal.svg" alt="White Tooth Dental Clinic" className="w-full h-auto max-w-[220px]" />
+        <div className="flex items-center justify-center">
+          <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="w-20 h-20 rounded-full" />
         </div>
       </div>
       

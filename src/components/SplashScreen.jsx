@@ -15,7 +15,7 @@ const SplashScreen = () => {
         className="w-40 sm:w-48 md:w-56 mb-8"
       >
         <img
-          src="/white-tooth-logo-icon.svg"
+          src="/white-tooth-logo-main.svg"
           alt="White Tooth Dental Clinic"
           className="w-full h-auto block"
         />

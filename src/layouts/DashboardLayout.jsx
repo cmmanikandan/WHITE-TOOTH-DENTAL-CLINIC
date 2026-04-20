@@ -19,7 +19,7 @@ const DashboardLayout = ({ allowedRoles }) => {
         {/* Mobile Header */}
         <header className="md:hidden flex items-center justify-between p-4 bg-white border-b border-slate-100 sticky top-0 z-40">
           <div className="flex items-center gap-2">
-            <img src="/white-tooth-logo-horizontal.svg" alt="White Tooth Dental Clinic" className="h-10 w-auto max-w-[180px]" />
+            <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="h-10 w-10 rounded-full" />
           </div>
           <div className="flex items-center gap-4">
             <button className="text-slate-600 p-2 rounded-xl hover:bg-slate-50">

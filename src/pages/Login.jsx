@@ -117,7 +117,7 @@ const Login = () => {
         </Link>
 
         <div className="text-center mb-8">
-          <img src="/white-tooth-logo-horizontal.svg" alt="White Tooth Dental Clinic" className="mx-auto w-full max-w-[320px] h-auto mb-3" />
+          <img src="/white-tooth-logo-main.svg" alt="White Tooth Dental Clinic" className="mx-auto w-24 h-24 rounded-full mb-3" />
           <p className="text-slate-500 font-medium">Your Smile, Our System</p>
         </div>
 
