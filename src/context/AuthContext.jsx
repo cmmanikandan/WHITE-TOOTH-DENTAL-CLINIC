@@ -12,9 +12,11 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      setLoading(true);
       try {
         setUser(user);
         if (user) {
+          setUserData(null);
           // Fetch additional user data from Firestore (role, name, etc.)
           const userDoc = await getDoc(doc(db, 'users', user.uid));
           if (userDoc.exists()) {
@@ -24,6 +26,8 @@ export const AuthProvider = ({ children }) => {
             const patientDoc = await getDoc(doc(db, 'patients', user.uid));
             if (patientDoc.exists()) {
               setUserData({ ...patientDoc.data(), role: 'patient' });
+            } else {
+              setUserData(null);
             }
           }
         } else {

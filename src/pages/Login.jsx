@@ -48,11 +48,14 @@ const Login = () => {
       else if (role === 'doctor') navigate('/doctor');
       else if (role === 'reception') navigate('/reception');
       else if (role === 'patient') navigate('/patient');
-      else toast.error('Account found but no role assigned.');
-      
+      else {
+        toast.error('Account found, but no role was assigned in Firestore.');
+        return;
+      }
+
       toast.success('Welcome back!');
     } catch (error) {
-      toast.error('Invalid email or password');
+      toast.error(error?.code === 'auth/invalid-credential' ? 'Invalid email or password' : error?.message || 'Login failed');
     } finally {
       setLoading(false);
     }
@@ -93,11 +96,14 @@ const Login = () => {
       else if (role === 'doctor') navigate('/doctor');
       else if (role === 'reception') navigate('/reception');
       else if (role === 'patient') navigate('/patient');
-      else toast.error('Account found but no role assigned.');
-      
+      else {
+        toast.error('Account found, but no role was assigned in Firestore.');
+        return;
+      }
+
       toast.success('Verified successfully');
     } catch (error) {
-      toast.error('Invalid OTP');
+      toast.error(error?.message || 'Invalid OTP');
     } finally {
       setLoading(false);
     }
