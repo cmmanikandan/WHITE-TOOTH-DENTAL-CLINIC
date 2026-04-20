@@ -42,8 +42,8 @@ const Landing = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={navLogo} alt="White Tooth Dental Clinic" className="h-12 w-12 rounded-full object-cover" />
-            <span className="text-slate-900 font-bold text-lg hidden sm:inline">White Tooth</span>
+            <img src={navLogo} alt="WHITE TOOTH DENTAL CLINIC" className="h-12 w-12 rounded-full object-cover" />
+            <span className="text-slate-900 font-bold text-lg hidden sm:inline">WHITE TOOTH</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-slate-600 font-bold text-sm">
@@ -88,6 +88,7 @@ const Landing = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-[1.1]">
               A Smarter Way to <span className="text-primary-600">Perfect</span> Smiles.
             </h1>
+            <p className="text-primary-600 font-semibold italic text-lg">Gentle Hands. Strong Results.</p>
             <p className="text-xl text-slate-500 leading-relaxed max-w-lg">
               Manage your dental health with ease. Book appointments, access prescriptions, and chat with your doctor — all in one place.
             </p>

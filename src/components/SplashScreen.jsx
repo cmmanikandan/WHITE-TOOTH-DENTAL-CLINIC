@@ -28,8 +28,8 @@ const SplashScreen = () => {
         transition={{ delay: 0.2 }}
         className="text-center"
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">WhiteTooth Dental Clinic</h1>
-        <p className="text-slate-400 font-bold text-[10px] uppercase tracking-[0.2em] mt-2">Premium Dental Care</p>
+        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">WHITE TOOTH DENTAL CLINIC</h1>
+        <p className="text-primary-600 font-bold text-sm mt-4 italic tracking-wide">Gentle Hands. Strong Results.</p>
       </motion.div>
 
       <div className="absolute bottom-12 w-48 h-1 bg-slate-100 rounded-full overflow-hidden">

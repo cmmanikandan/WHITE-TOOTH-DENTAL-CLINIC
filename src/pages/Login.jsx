@@ -117,9 +117,10 @@ const Login = () => {
           Back to home
         </Link>
 
-        <div className="text-center mb-8">
-          <img src={fullLogo} alt="White Tooth Dental Clinic" className="mx-auto w-24 h-24 rounded-full object-cover mb-3" />
-          <p className="text-slate-500 font-medium">Your Smile, Our System</p>
+        <div className="text-center mb-8 space-y-3">
+          <img src={fullLogo} alt="WHITE TOOTH DENTAL CLINIC" className="mx-auto w-24 h-24 rounded-full object-cover mb-3" />
+          <h1 className="text-2xl font-bold text-slate-900">WHITE TOOTH DENTAL CLINIC</h1>
+          <p className="text-primary-600 font-semibold italic text-sm">Gentle Hands. Strong Results.</p>
         </div>
 
         <div className="bg-white rounded-3xl shadow-xl border border-slate-100 p-8">
