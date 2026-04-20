@@ -15,24 +15,9 @@ import AdminDashboard from './pages/admin/Dashboard';
 import StaffManagement from './pages/admin/StaffManagement';
 import PatientDashboard from './pages/patient/Dashboard';
 import PatientProfile from './pages/patient/Profile';
-import SplashScreen from './components/SplashScreen';
 import { useAuth } from './context/AuthContext';
 
 function App() {
-  const { loading } = useAuth();
-  const [minimumSplashReady, setMinimumSplashReady] = React.useState(false);
-
-  React.useEffect(() => {
-    const timer = window.setTimeout(() => {
-      setMinimumSplashReady(true);
-    }, 2500);
-
-    return () => window.clearTimeout(timer);
-  }, []);
-
-  if (loading || !minimumSplashReady) {
-    return <SplashScreen />;
-  }
 
   return (
     <>
